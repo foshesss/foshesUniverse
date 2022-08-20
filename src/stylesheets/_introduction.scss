@@ -1,0 +1,26 @@
+.underground__body {
+    background-color: rgb(33,33,33);
+    height: 100vh;
+}
+
+.underground__mainTXT {
+    color: white;
+    text-align: center;
+    padding: 0 20vw;
+    padding-top: 12.5vh;
+    font-size: 8.5vh;
+}
+
+.underground__four-goals {
+    display: table;
+    margin: 0 auto;
+}
+
+.underground__four-goals ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 23.5vh;
+    width: 100%;
+}
+

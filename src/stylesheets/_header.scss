@@ -1,0 +1,50 @@
+.header {
+    margin-top: 35px;
+    width: 100%;
+    position: fixed;
+}
+
+.header__content {
+    margin: 0 45px;
+    display: flex;
+    align-items: baseline;
+}
+
+.header__content__title {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+} 
+
+.header__content__title, .header__content__navbar li a {
+    color: white;
+    text-align: center;
+}
+
+.header__content__nav {
+    position: absolute;
+    right: 35px;
+}
+
+.header__content__navbar {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.header__content__navbar li {
+    display: inline-block; 
+    float: none;
+    margin-right: 10px;
+}
+
+.header__content__navbar li a {
+    text-decoration: none;
+    opacity: 75%;
+}
+
+.header__content__navbar li a:hover {
+    color: rgb(220,220,220);
+}
