@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
 
+    const iconSize = "18";
     return (
        <header className="header">
             <div className="header__content">
@@ -18,6 +19,32 @@ const Header = () => {
                         </li>
                         <li>
                             <a href="/">resume</a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.linkedin.com/in/will-foshes-hamilton/" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png"
+                                    alt="linkedin.png"
+                                    width={iconSize} height={iconSize}
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://github.com/foshesss"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://git-scm.com/images/logos/downloads/Git-Icon-White.png"
+                                    alt="github.png"
+                                    width={iconSize} height={iconSize}
+                                />
+                            </a>
                         </li>
                     </ul>
                 </nav>

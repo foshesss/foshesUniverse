@@ -2,3 +2,48 @@
     background-image: linear-gradient(to bottom left, #2a2a72, #009FFD);;
     height: 100vh;
 }
+
+.surface__info-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.surface__name, .surface__job-title {
+    color: white;
+    text-align: center;
+}
+
+.surface__info-container > div {
+    overflow: hidden;
+}
+
+.surface__name {
+    animation: showTopText 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    font-size: 100px;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
+.surface__job-title  {
+    animation: showBottomText .75s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    font-size: 35px;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
+  @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    50% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
