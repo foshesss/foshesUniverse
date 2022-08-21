@@ -1,19 +1,11 @@
 import React from "react";
-
-const onClick = (goal) => {
-    const element = document.getElementById(goal);
-    if (element == null) return;
-    element.scrollIntoView({
-        block: 'end',  
-        behavior: 'smooth'
-    });
-}
+import scrollToElement from "../functions/scrollToElement";
 
 const NavBarButton = ({text, goal}) => (
     <li>
         <button
             type="button" 
-            onClick={() => onClick(goal)}
+            onClick={() => scrollToElement(goal)}
         >
             {text}
         </button>

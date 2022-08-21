@@ -1,12 +1,17 @@
 import React from "react";
 import NavBarButton from "./NavBarButton";
 import NavBarSocial from "./NavBarSocial";
+import scrollToElement from "../functions/scrollToElement";
 
 const NavBar = () => (
     <nav className="navbar">
-        <div className="navbar__title">
+        <button
+            className="navbar__title"
+            type="button"
+            onClick={() => scrollToElement('home')}
+        >
             foshesUniverse
-        </div>
+        </button>
         <div className="navbar__links">
             <ul>
                 <NavBarButton text='about' goal='about'/>

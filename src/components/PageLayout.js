@@ -6,7 +6,7 @@ import NavMenu from "./NavMenu";
 const PageLayout = () => {
     return (
         <div>
-            <NavMenu />
+            {/* <NavMenu /> */}
             <NavBar />
             <Surface />
         </div>
