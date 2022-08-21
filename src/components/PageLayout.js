@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./Header";
+import NavBar from "./NavBar";
 import Surface from "./Surface";
-import Introduction from "./Introduction";
+import NavMenu from "./NavMenu";
 
 const PageLayout = () => {
     return (
         <div>
-            <Header />
+            <NavMenu />
+            <NavBar />
             <Surface />
-            <Introduction />
         </div>
     );
 }

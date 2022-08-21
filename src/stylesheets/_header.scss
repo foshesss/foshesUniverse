@@ -17,7 +17,7 @@
     padding: 0;
 } 
 
-.header__content__title, .header__content__navbar li a {
+.header__content__title, .header__content__navbar li button {
     color: white;
     text-align: center;
 }
@@ -38,14 +38,16 @@
 .header__content__navbar li {
     display: inline-block; 
     float: none;
-    margin-right: 10px;
+    margin-right: 11px;
 }
 
-.header__content__navbar li a {
+.header__content__navbar li button, .header__content__navbar li a {
     text-decoration: none;
     opacity: 75%;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.header__content__navbar li a:hover {
-    color: rgb(220,220,220);
+.header__content__navbar li button:hover, .header__content__navbar li img:hover {
+    opacity: 60%;
 }

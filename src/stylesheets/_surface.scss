@@ -1,6 +1,7 @@
 .surface__body {
     background-image: linear-gradient(to bottom left, #2a2a72, #009FFD);;
     height: 100vh;
+    overflow: hidden;
 }
 
 .surface__info-container {
@@ -23,18 +24,21 @@
     animation: showTopText 1s;
     animation-delay: .5s;
     animation-fill-mode: forwards;
-    font-size: 100px;
+    font-size: max(5.5vw, 50px);
+    white-space: nowrap;
     top: 0;
     transform: translate(0, -100%);
 }
 
 .surface__job-title  {
-    animation: showBottomText .75s;
+    animation: showBottomText 1s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
-    font-size: 35px;
+    white-space: nowrap;
+    font-size: max(2.25vw, 20px);
     top: 0;
     transform: translate(0, -100%);
+    opacity: 75%;
 }
 
 @keyframes showTopText {

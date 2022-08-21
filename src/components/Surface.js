@@ -2,7 +2,7 @@ import React from "react";
 
 const Surface = () => {
     return (
-       <div className="surface__body">
+       <div className="surface__body" id="home">
             <div className="surface__info-container">
                 <div>
                     <h1 className="surface__name">
