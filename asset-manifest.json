@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/foshesUniverse/static/css/main.34bf853b.css",
+    "main.js": "/foshesUniverse/static/js/main.ef8c59a9.js",
+    "index.html": "/foshesUniverse/index.html",
+    "main.34bf853b.css.map": "/foshesUniverse/static/css/main.34bf853b.css.map",
+    "main.ef8c59a9.js.map": "/foshesUniverse/static/js/main.ef8c59a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34bf853b.css",
+    "static/js/main.ef8c59a9.js"
+  ]
+}
