@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/foshesUniverse/static/css/main.9beeb559.css",
-    "main.js": "/foshesUniverse/static/js/main.2fbc8605.js",
+    "main.css": "/foshesUniverse/static/css/main.fcdb227d.css",
+    "main.js": "/foshesUniverse/static/js/main.02f86235.js",
     "index.html": "/foshesUniverse/index.html",
-    "main.9beeb559.css.map": "/foshesUniverse/static/css/main.9beeb559.css.map",
-    "main.2fbc8605.js.map": "/foshesUniverse/static/js/main.2fbc8605.js.map"
+    "main.fcdb227d.css.map": "/foshesUniverse/static/css/main.fcdb227d.css.map",
+    "main.02f86235.js.map": "/foshesUniverse/static/js/main.02f86235.js.map"
   },
   "entrypoints": [
-    "static/css/main.9beeb559.css",
-    "static/js/main.2fbc8605.js"
+    "static/css/main.fcdb227d.css",
+    "static/js/main.02f86235.js"
   ]
 }
