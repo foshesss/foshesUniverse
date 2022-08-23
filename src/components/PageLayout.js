@@ -1,16 +1,13 @@
-import React from "react";
-import NavBar from "./NavBar";
-import Surface from "./Surface";
-import NavMenu from "./NavMenu";
+import React from 'react';
+import NavBar from './NavBar';
+import Surface from './Surface';
 
-const PageLayout = () => {
-    return (
-        <div>
-            {/* <NavMenu /> */}
-            <NavBar />
-            <Surface />
-        </div>
-    );
-}
+const PageLayout = () => (
+    <div>
+        {/* <NavMenu /> */}
+        <NavBar />
+        <Surface />
+    </div>
+);
 
 export default PageLayout;
