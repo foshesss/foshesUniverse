@@ -22,10 +22,10 @@
 };
 
 
-::-webkit-scrollbar {
-  opacity: 0;
+html, body {
+  overflow-x:hidden;
 }
 
-body {
-  overflow-x: hidden;
+::-webkit-scrollbar-track {
+  opacity: 0;
 }

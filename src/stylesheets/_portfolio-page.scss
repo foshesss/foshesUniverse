@@ -3,6 +3,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    background: blueviolet;
 }
 
 // portfolio banner
@@ -40,6 +41,7 @@
 .portfolio-bar {
     position: absolute;
     height: 58.5vh;
+    max-height: 600px;
     width: calc(100vw - 12%);
     top: 57%;
     margin: 0 6%;
@@ -47,18 +49,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-}
-
-// portfolio bar entry
-.portfolio__bar-entry {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    max-height: 100%;
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 15px;
 }
 
 .portfolio-page__helper {
@@ -70,4 +60,40 @@
     left: 50%;
     bottom: 9%;
     white-space: nowrap;
+}
+
+// screen size
+@media screen and (max-height: 930px) {
+    .portfolio__banner-prev-item {
+        visibility: hidden;
+    }
+
+    .portfolio__banner > span {
+        visibility: hidden;
+    }
+
+    #portfolio__banner-header {
+        visibility: visible;
+        font-size: 13vmin;
+    }
+
+    .portfolio__banner {
+        top: 16.5%;
+        left: 25px;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    #portfolio__banner-header {
+        font-size: 12.5vmin;
+    }
+
+    .portfolio__banner {
+        top: 20.5%;
+        left: 25px;
+    }
+
+    .portfolio-bar {
+        height: 400px;
+    }
 }

@@ -10,6 +10,14 @@ const Introduction = () => (
             <PersonalDescription />
             <CallToAction />
         </div>
+        <button>
+            <img
+                className="moreIndicator"
+                src={"https://assets.stickpng.com/images/58f8bcf70ed2bdaf7c128307.png"}
+                alt={"down arrow"}
+            >
+            </img>
+        </button>
     </div>
 );
 
