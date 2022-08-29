@@ -1,0 +1,44 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    color: black;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    z-index: 5;
+}
+
+.navbar__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar__title:hover {
+    cursor: pointer;
+}
+
+.navbar__links ul {
+    display: flex;
+}
+
+.navbar__links li {
+    list-style: none;
+}
+
+.navbar__links li button {
+    display: block;
+    font-size: .95rem;
+    margin-right: .5rem;
+    white-space: nowrap;
+}
+
+.navbar__links li img {
+    margin-right: .35rem;
+}
+
+.navbar__links li button:hover, .navbar__links li img:hover {
+    opacity: 65%;
+    cursor: pointer;
+}
