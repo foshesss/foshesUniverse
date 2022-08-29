@@ -14,21 +14,21 @@ const NavBar = () => (
         </button>
         <div className="navbar__links">
             <ul>
-                <NavBarButton text="about" goal="about" />
                 <NavBarButton text="projects" goal="projects" />
+                <NavBarButton text="experience" goal="experience" />
                 <NavBarSocial
                     link="https://www.linkedin.com/in/will-foshes-hamilton"
-                    img="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png"
+                    img="https://www.shareicon.net/data/2015/08/03/79433_linkedin_512x512.png"
                     alt="linkedin.png"
                 />
                 <NavBarSocial
                     link="https://github.com/foshesss"
-                    img="https://git-scm.com/images/logos/downloads/Git-Icon-White.png"
+                    img="https://cdn-icons-png.flaticon.com/512/38/38401.png"
                     alt="github.png"
                 />
                 <NavBarSocial
                     link="https://www.twitch.tv/superjoshiepartyanimal123"
-                    img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Twitch_Glitch_Logo_White.svg/1200px-Twitch_Glitch_Logo_White.svg.png"
+                    img="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Twitch_Glitch_Logo_Black.svg/1756px-Twitch_Glitch_Logo_Black.svg.png"
                     alt="twitch.png"
                     widthRatio={12 / 14}
                 />

@@ -1,0 +1,73 @@
+// portfolio page
+.portfolio-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+// portfolio banner
+.portfolio__banner {
+    position: absolute;
+    transform: translate(0, -50%); 
+    top: 14.5%; 
+    left: 7.8%;
+    white-space: nowrap;
+}
+
+.portfolio__banner > span {
+    display: inline-block;
+    font-size: 7vmin;
+    white-space: nowrap;
+    opacity: .5;
+    padding-right: 1.5%;
+    font-weight: bolder;
+    bottom: 0%;
+    letter-spacing: -0.02em;
+}
+
+.portfolio__banner-prev-item {
+    transform: translate(-100%, -10%);
+    position: absolute;
+}
+
+#portfolio__banner-header {
+    font-size: 10.5vmin;
+    opacity: 1;
+}
+
+
+//  portfolio bar
+.portfolio-bar {
+    position: absolute;
+    height: 58.5vh;
+    width: calc(100vw - 12%);
+    top: 57%;
+    margin: 0 6%;
+    transform: translateY(-50%);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+// portfolio bar entry
+.portfolio__bar-entry {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    max-height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.portfolio-page__helper {
+    position: absolute;
+    opacity: .5;
+    font-weight: 600;
+    font-size: 24px;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 9%;
+    white-space: nowrap;
+}

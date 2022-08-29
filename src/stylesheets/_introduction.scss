@@ -1,0 +1,55 @@
+.introduction {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.introduction__container {
+    position: absolute;
+    transform: translate(0, -50%); 
+    top: 45%; 
+    left: 7.8%;
+}
+
+.introduction__name-container, 
+.introduction__personal-description {
+    white-space: nowrap;
+    cursor: default;
+}
+
+.introduction__name-container {
+    font-size: 3.75vmin;
+    margin-bottom: .93%;
+}
+
+.introduction__personal-description {
+    font-size: 2.5vmin;
+    margin-bottom: 5.3%;
+}
+
+.introduction__name {
+    font-size: 11vmin;
+}
+
+$linkedin: #0072b1;
+
+.introduction__connect {
+    border: 2px solid;
+    padding: 1.85% 3.7%;
+    background-color: white;
+    border-color: $linkedin;
+    border-radius: 3px;
+    color: $linkedin;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.35vmin;
+    transition: color 0.1s ease-out 0s, 
+        background-color 0.1s ease-out 0s;
+    cursor: pointer;
+}
+
+.introduction__connect:hover {
+    color: white;
+    background-color: $linkedin;
+}

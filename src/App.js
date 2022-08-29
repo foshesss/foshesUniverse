@@ -1,9 +1,10 @@
-import React from 'react';
 import PageLayout from './components/PageLayout';
 import './main.scss';
 
 const App = () => (
-    <PageLayout />
+  <PageLayout 
+    className="page-layout"
+  />
 );
 
 export default App;

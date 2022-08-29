@@ -1,12 +1,24 @@
-import React from 'react';
-import NavBar from './NavBar';
-import Surface from './Surface';
+import React from "react";
+import NavBar from "./NavBar";
+import Introduction from "./Introduction";
+import PortfolioPage from "./PortfolioPage";
+
+// constants
+import projects from "../constants/projects";
+import experience from "../constants/experience";
 
 const PageLayout = () => (
     <div>
-        {/* <NavMenu /> */}
         <NavBar />
-        <Surface />
+        <Introduction />
+        <PortfolioPage
+            pageName={"projects"}
+            contents={projects}
+        />
+        <PortfolioPage
+            pageName={"experience"}
+            contents={experience}
+        />
     </div>
 );
 
