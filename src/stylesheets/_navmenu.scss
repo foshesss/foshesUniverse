@@ -1,0 +1,23 @@
+.navmenu {
+    z-index: 2;
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    right: 0;
+    background: rgb(25,25,25,.5);
+    backdrop-filter: blur(.25rem);
+}
+
+.navmenu__contents ul {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-right: .5rem;
+    transform: translate(-100%, -100%);
+}
+
+.navmenu__contents ul li {
+    list-style: none;
+    color: white;
+}
