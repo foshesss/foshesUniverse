@@ -1,5 +1,5 @@
-const PortfolioBar = ({ contents }) => (
-    <div className="portfolio-bar">
+const PortfolioBar = ({ contents, id }) => (
+    <div className="portfolio-bar" id={id}>
         {contents}
     </div>
 );
