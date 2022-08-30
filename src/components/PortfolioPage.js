@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import isOverflowing from "../functions/isOverflowing";
 import PortfolioBanner from "./PortfolioBanner";
 import PortfolioBar from "./PortfolioBar";
+import $ from 'jquery';
 
 const PortfolioPage = ({ pageName, contents }) => {
 
+    const [overflowing, setOverflowing] = useState(false);
     const barKey = pageName + "-bar";
+
+    $({barKey}).ready(function() {
+        setOverflowing(
+            isOverflowing(document.getElementById(barKey))
+        );
+    });
 
     return (
         <div
@@ -22,9 +30,8 @@ const PortfolioPage = ({ pageName, contents }) => {
             <h1 
                 className="portfolio-page__helper"
                 style={{
-                    visibility: isOverflowing(
-                        document.getElementById(barKey)
-                    ) === true ? 'visible' : 'hidden',
+                    visibility: overflowing === true ? 
+                        'visible' : 'hidden',
                 }}
             >
                 <i>scroll left or right to see more items</i>

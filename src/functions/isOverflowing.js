@@ -7,10 +7,6 @@ const isOverflowing = (el) => {
         el.style.overflow = "hidden";
       
     var isOverflowing = el.clientWidth < el.scrollWidth;
-
-
-    console.log(el.scrollWidth, el.clientWidth);
-    console.log(isOverflowing);
       
     el.style.overflow = curOverf;
       

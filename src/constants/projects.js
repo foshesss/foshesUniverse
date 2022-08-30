@@ -69,7 +69,7 @@ const projects = [
         projectName={"This Website"}
         description={"Created this website using ReactJS and SCSS. Deployed it through GitHub."}
         fileType={"js"}
-        duration={"August 2022"}
+        duration={"Since August 2022"}
         src={"https://64.media.tumblr.com/c9ae57ddaa9aace76a5a49f84b1809b4/0e2cf55e0a8da0c3-c2/s2048x3072/b5210aa9c40f2524b1e5f7a32697930d1461601b.jpg"}
         alt={"this-website"}
     />
