@@ -43,7 +43,7 @@ const projects = [
     />,
     <PortfolioBarEntry
         projectName={"Olfert's Quarry"}
-        description={"Created complex cave generation using the Marching Cubes algorithm and an array of 3D math."}
+        description={"Created an infinite mining game that features complex cave generation using the Marching Cubes algorithm and an array of 3D math."}
         src={"https://i.gyazo.com/9c1e8713956ba4730f3eec4a15b77cdd.jpg"}
         alt={"olfert's quarry"}
         fileType={"lua"}

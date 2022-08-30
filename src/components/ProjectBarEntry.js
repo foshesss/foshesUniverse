@@ -1,7 +1,7 @@
 import getLanguageColor from "../functions/getLanguageColor";
 import getCompanyColor from "../functions/getCompanyColor";
 
-const ProjectsBarEntry = ({projectName, description, fileType, companyType, src, alt, duration}) => {
+const ProjectsBarEntry = ({projectName, description, fileType, companyType, src, alt, duration, imgStyle}) => {
     const [ backgroudColor, color ] = fileType !== undefined ? 
         getLanguageColor(fileType) : getCompanyColor(companyType);
 
@@ -19,6 +19,9 @@ const ProjectsBarEntry = ({projectName, description, fileType, companyType, src,
     return (
         <div className="portfolio__bar-entry" style={style}>
             <img
+                style={{
+                    "objectFit": imgStyle || 'cover',
+                }}
                 src={src}
                 alt={alt}
                 className="projects__bar-entry-image"

@@ -4,8 +4,9 @@ const experience = [
     <PortfolioBarEntry
         projectName={"TeleTracking Internship"}
         description={"Worked on the Productivity Engineering team, creating developer tools and contributing to a front-end framework."}
-        src={"https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1506072120/uwinjs0oa1ekywa8so5o.png"}
+        src={"https://www.teletracking.com/media/1751/open-graph-teletracking-default.png?width=3000&upscale=false"}
         alt={"teletracking"}
+        imgStyle={"contain"}
         companyType={"tele"}
         duration={"May - August 2022"}
     />,
