@@ -7,8 +7,11 @@ import PortfolioPage from "./PortfolioPage";
 import projects from "../constants/projects";
 import experience from "../constants/experience";
 
-const PageLayout = () => (
-    <div>
+const PageLayout = ({ style }) => (
+    <div
+        className="page-layout"
+        style={style}
+    >
         <NavBar />
         <Introduction />
         <PortfolioPage

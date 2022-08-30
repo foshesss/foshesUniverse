@@ -11,7 +11,7 @@ const experience = [
     />,
     <PortfolioBarEntry
         projectName={"Programming Livestreamer"}
-        description={"Host an educational development stream, explaining code and collaborating with viewers."}
+        description={"Host an educational software development stream, explaining code and collaborating with viewers."}
         src={"https://iconape.com/wp-content/png_logo_vector/twitch-2.png"}
         alt={"twitch"}
         companyType={"twitch"}

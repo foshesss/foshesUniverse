@@ -1,10 +1,36 @@
+import { useEffect, useState } from 'react';
 import PageLayout from './components/PageLayout';
 import './main.scss';
 
-const App = () => (
-  <PageLayout 
-    className="page-layout"
-  />
-);
+const App = () => {
+
+  // if you're reading this, mobile is a pain in the ass:
+  /*
+
+  */
+  const [windowSize, setWindowSize] = useState({
+    height: window.innerHeight,
+  });
+
+  const updateWindowSize = () => {
+    setWindowSize({
+      height: window.innerHeight,
+    });
+  };
+
+  // set up event
+  window.addEventListener('resize', updateWindowSize);
+ 
+  // remove event
+  useEffect(() => () => {
+    window.removeEventListener('resize', updateWindowSize)
+  });
+
+  return (
+    <PageLayout
+      style={windowSize}
+    />
+  );
+};
 
 export default App;

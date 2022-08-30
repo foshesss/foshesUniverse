@@ -1,6 +1,6 @@
 .introduction {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow: hidden;
 }
@@ -56,8 +56,49 @@ $linkedin: #0072b1;
 
 .moreIndicator {
     position: absolute;
-    height: 75px;
-    width: 75px;
-    bottom: 25px;
-    right: 25px;
+    height: 65px;
+    width: 65px;
+    bottom: 45px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.moreIndicator img {
+    height: 100%;
+    width: 100%;
+}
+
+// screen size
+@media screen and (max-height: 930px) {
+    .introduction__name-container {
+        font-size: 16px;
+    }
+
+    .introduction__name {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .introduction__personal-description {
+        font-size: 16px;
+        width: 86.5%;
+        white-space: normal;
+        margin-bottom: 25px;
+    }
+
+    .introduction__connect {
+        border: 1.8px solid;
+        font-size: 20px;
+    }
+
+    .moreIndicator {
+        height: 50px;
+        width: 50px;
+        bottom: 35px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-height: 820px) {
+
 }

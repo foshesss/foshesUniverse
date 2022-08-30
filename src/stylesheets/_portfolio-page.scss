@@ -1,9 +1,8 @@
 // portfolio page
 .portfolio-page {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    background: blueviolet;
 }
 
 // portfolio banner
@@ -40,7 +39,7 @@
 //  portfolio bar
 .portfolio-bar {
     position: absolute;
-    height: 58.5vh;
+    height: 55.5%;
     max-height: 600px;
     width: calc(100vw - 12%);
     top: 57%;
@@ -58,7 +57,7 @@
     font-size: 24px;
     transform: translateX(-50%);
     left: 50%;
-    bottom: 9%;
+    bottom: 6%;
     white-space: nowrap;
 }
 
@@ -74,12 +73,21 @@
 
     #portfolio__banner-header {
         visibility: visible;
-        font-size: 13vmin;
+        font-size: 13.5vmin;
+    }
+
+    .portfolio-bar {
+        top: 53.5%;
+        height: 500px;
     }
 
     .portfolio__banner {
         top: 16.5%;
         left: 25px;
+    }
+
+    .portfolio-page__helper {
+        bottom: 7.5%;
     }
 }
 
@@ -88,12 +96,8 @@
         font-size: 12.5vmin;
     }
 
-    .portfolio__banner {
-        top: 20.5%;
-        left: 25px;
-    }
-
     .portfolio-bar {
-        height: 400px;
+        top: 54%;
+        height: 425px;
     }
 }
