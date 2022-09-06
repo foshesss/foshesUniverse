@@ -25,7 +25,7 @@ const experiences = [
     />,
     <ResumeCard 
         title="Game Developer"
-        description="Host an educational software development stream, explaining code and collaborating with viewers."
+        description="Created a multitude of virtual experiences that have reached thousands of unique users."
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roblox_player_icon_black.svg/1200px-Roblox_player_icon_black.svg.png"
         alt="roblox"
         fileType="blox"

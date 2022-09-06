@@ -37,8 +37,10 @@
         hsl(0 0% 0% / .6)
     );
 
-    > a, p {
-        margin-top: 1.25em;
+    p {
+        margin-top: .75em;
+        font-weight: 500;
+        font-size: 1.05rem;
     }
 }
 
