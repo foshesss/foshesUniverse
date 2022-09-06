@@ -1,7 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Surface = () => (
-    <div className="surface__body" id="home">
+const Surface = ({ offset }) => (
+    <div
+        className="surface__body"
+        id="home"
+        offset={offset}
+    >
         <div className="surface__info-container">
             <div>
                 <h1 className="surface__name">
@@ -16,5 +21,9 @@ const Surface = () => (
         </div>
     </div>
 );
+
+Surface.propTypes = {
+    offset: PropTypes.number.isRequired,
+};
 
 export default Surface;
