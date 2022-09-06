@@ -1,48 +1,22 @@
 import React, { useEffect } from "react";
 import scrollToElement from "../functions/scrollToElement";
+import toggleHamburgerMenu from "../functions/toggleHamburgerMenu";
 
 const NavBar = () => {
 
-    const primaryNav = document.querySelector('#primary-navigation');
-    const navToggle = document.querySelector('#mobile-nav-toggle');
-
-    const toggleVisibility = (newState) => {
-        let newVisibility;
-
-        if (newState === true || newState === false) {
-            newVisibility = newState
-        } else {
-            let visible = primaryNav.getAttribute('data-visible');
-            newVisibility = visible === "false" ? true : false;
-        }
-        
-        primaryNav.setAttribute('data-visible', newVisibility);
-        navToggle.setAttribute('aria-expanded', newVisibility);
-    };
-
     useEffect(() => {
-        const primaryNav = document.querySelector('#primary-navigation');
         const navToggle = document.querySelector('#mobile-nav-toggle');
-
-        const toggleVisibility = () => {
-            const visible = primaryNav.getAttribute('data-visible');
-            const newVisibility = visible === "false" ? true : false;
-            
-            primaryNav.setAttribute('data-visible', newVisibility);
-            navToggle.setAttribute('aria-expanded', newVisibility);
-        };
-
-        navToggle.addEventListener('click', toggleVisibility);
+        navToggle.addEventListener('click', toggleHamburgerMenu);
 
         return () => {
-            navToggle.removeEventListener('click', toggleVisibility);
+            navToggle.removeEventListener('click', toggleHamburgerMenu);
         };
     }, []);
 
 
     const onClick = (goal) => {
         scrollToElement(goal);
-        toggleVisibility(false);
+        toggleHamburgerMenu(false);
     }
     
     return (
