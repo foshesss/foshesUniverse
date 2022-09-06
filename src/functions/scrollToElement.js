@@ -1,10 +1,7 @@
 const scrollToElement = (id) => {
     const element = document.getElementById(id);
     if (element == null) return;
-    element.scrollIntoView({
-        block: 'end',
-        behavior: 'smooth',
-    });
+    element.scrollIntoView(true);
 };
 
 export default scrollToElement;

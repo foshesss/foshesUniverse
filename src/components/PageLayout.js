@@ -1,13 +1,27 @@
-import React from 'react';
-import NavBar from './NavBar';
-import About from './About';
-import Surface from './Surface';
+import React from "react";
+import NavBar from "./NavBar";
+import Introduction from "./Introduction";
+import PortfolioPage from "./PortfolioPage";
 
-const PageLayout = () => (
-    <div>
+// constants
+import projects from "../constants/projects";
+import experience from "../constants/experience";
+
+const PageLayout = ({ style }) => (
+    <div
+        className="page-layout"
+        style={style}
+    >
         <NavBar />
-        <Surface />
-        <About />
+        <Introduction />
+        <PortfolioPage
+            pageName={"projects"}
+            contents={projects}
+        />
+        <PortfolioPage
+            pageName={"experience"}
+            contents={experience}
+        />
     </div>
 );
 

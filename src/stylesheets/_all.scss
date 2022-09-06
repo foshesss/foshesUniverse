@@ -1,4 +1,31 @@
-@import './surface';
+@import './introduction';
 @import './navbar';
-@import './navmenu';
-@import './about';
+@import './portfolio-page';
+@import './project-bar-entry';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Open Sans, Arial, sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;/* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+};
+
+
+html, body {
+  overflow-x:hidden;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
