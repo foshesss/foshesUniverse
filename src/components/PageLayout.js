@@ -1,26 +1,26 @@
 import React from "react";
+import Intro from "./Intro";
 import NavBar from "./NavBar";
-import Introduction from "./Introduction";
-import PortfolioPage from "./PortfolioPage";
+import ResumePage from "./ResumePage";
 
-// constants
-import projects from "../constants/projects";
-import experience from "../constants/experience";
+import projects from "../resumeEntries/projects";
+import experiences from "../resumeEntries/experiences";
 
-const PageLayout = ({ style }) => (
-    <div
-        className="page-layout"
-        style={style}
-    >
+const PageLayout = () => (
+    <div id='page-layout'>
         <NavBar />
-        <Introduction />
-        <PortfolioPage
-            pageName={"projects"}
-            contents={projects}
+        <Intro />
+        <ResumePage
+            name='PROJECTS'
+            description='an assortment of my personal projects'
+            cards={projects}
+            id='projects'
         />
-        <PortfolioPage
-            pageName={"experience"}
-            contents={experience}
+        <ResumePage
+            name='EXPERIENCE'
+            description='industry experience-- you know the vibe'
+            cards={experiences}
+            id='experience'
         />
     </div>
 );

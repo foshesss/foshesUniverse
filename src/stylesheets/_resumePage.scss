@@ -1,0 +1,40 @@
+.resume-page {
+    max-width: min(95%, 100% - 0.75rem);
+}
+
+.resume-page__header {
+    white-space: nowrap;
+    margin-bottom: 3em;
+
+    > span {
+        position: relative;
+        display: flex;
+
+        h2 {
+            opacity: .5;
+            padding-right: .35em;
+            margin-top: auto;
+            font-size: min(7.9vw, 3.75rem);
+        }
+    }
+
+    > p {
+        font-size: min(4.5vw, 2.15rem);
+    }
+}
+
+.resume-page__cards {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+#previous_item {
+    position: absolute;
+    transform: translateX(-100%);
+    bottom: 0;
+}
+
+#current_item {
+    font-size: min(10vw, 4.75rem);
+    opacity: 1;
+}
