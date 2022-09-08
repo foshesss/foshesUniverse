@@ -1,7 +1,9 @@
 import React from "react";
 
 const ResumePage = ({ name, description, cards, id }) => (
-    <section className="resume-page" id={id}>
+    <section className="resume-page" id={id} style={id === "experience" ? {
+        "margin-bottom": 0,
+    } : null}>
         <header className="resume-page__header">
             <span>
                 <h2 id='previous_item'>{name}</h2>
@@ -17,9 +19,9 @@ const ResumePage = ({ name, description, cards, id }) => (
 
             <p>{description}</p>
         </header>
-        <section className="resume-page__cards">
+        <div className="resume-page__cards">
             {cards}
-        </section>
+        </div>
     </section>
 );
 

@@ -16,6 +16,8 @@ const LanguageColors = {
     tele: [rgb(25,174,108), rgb(255,255,255)],
     twitch: [rgb(145, 70, 255), rgb(255,255,255)],
     blox: [rgb(226,35,26), rgb(255,255,255)],
+    in: [rgb(0,114,177), rgb(255,255,255)],
+    git: [rgb(46, 139, 87), rgb(255,255,255)]
 }
 
 const defaultColors = [rgb(220,220,220), rgb(255,255,255)];

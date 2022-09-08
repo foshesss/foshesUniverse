@@ -49,6 +49,14 @@ const NavBar = () => {
                             experience
                         </button>
                     </li>
+                    <li>
+                        <button
+                            type="button"
+                            onClick={() => onClick('social-buttons-container')}
+                        >
+                            socials
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </header>

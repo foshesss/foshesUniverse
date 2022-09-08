@@ -2,9 +2,11 @@ import React from "react";
 import Intro from "./Intro";
 import NavBar from "./NavBar";
 import ResumePage from "./ResumePage";
+import Socials from "./Socials";
 
 import projects from "../resumeEntries/projects";
 import experiences from "../resumeEntries/experiences";
+import buttonInfo from "../data/buttonInfo";
 
 const PageLayout = () => (
     <div id='page-layout'>
@@ -22,6 +24,7 @@ const PageLayout = () => (
             cards={experiences}
             id='experience'
         />
+        <Socials buttonInfo={buttonInfo} />
     </div>
 );
 

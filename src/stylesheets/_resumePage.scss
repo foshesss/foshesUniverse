@@ -14,12 +14,13 @@
             opacity: .5;
             padding-right: .35em;
             margin-top: auto;
-            font-size: min(7.9vw, 3.75rem);
+            font-size: min(11.5vw, 3.75rem);
         }
     }
 
     > p {
-        font-size: min(4.5vw, 2.15rem);
+        white-space: normal;
+        font-size: min(5vw, 2.15rem);
     }
 }
 
@@ -35,6 +36,6 @@
 }
 
 #current_item {
-    font-size: min(10vw, 4.75rem);
+    font-size: min(13vw, 4.75rem);
     opacity: 1;
 }
