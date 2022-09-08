@@ -2,7 +2,7 @@ import React from "react";
 
 const ResumePage = ({ name, description, cards, id }) => (
     <section className="resume-page" id={id} style={id === "experience" ? {
-        "margin-bottom": 0,
+        marginBottom: 0,
     } : null}>
         <header className="resume-page__header">
             <span>

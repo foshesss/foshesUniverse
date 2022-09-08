@@ -9,6 +9,11 @@ const SocialButton = ({ style }) => {
     const imgStyle = style.imgStyle;
 
     useEffect(() => {
+        if (
+            !window.matchMedia("(hover: hover)").matches || 
+            !window.matchMedia("(any-hover: hover)").matches
+        ) return;
+
         const button = document.getElementById(appName);
 
         const hover = () => {
