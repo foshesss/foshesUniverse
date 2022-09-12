@@ -11,7 +11,7 @@ const Intro = () => {
         // update chess rating
         chessAPI.getPlayerStats('foshes7')
         .then(function(response) {
-            setChessRating(response.body.chess_rapid.last.rating);
+            setChessRating(response.body.tactics.highest.rating);
         }, function(err) {
             console.error(err);
         });
